@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OPTI BOT</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+.logo-link{
+text-decoration:none;
+color:inherit;
+}
+
+/* ABOUT SECTION */
+
+.about-right a,
+.about-right a:visited,
+.about-right a:hover,
+.about-right a:active{
+text-decoration:none;
+color:inherit;
+}
+
+
+.about-container{
+display:flex;
+align-items:center;
+row-gap: 60px;
+column-gap: 50px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+
+.about-right{
+display:flex;
+flex-direction:column;
+row-gap: 10px;
+column-gap:25px;
+max-width:520px;
+text-align:left;
+}
+
+.about-card{
+display:flex;
+gap:15px;
+align-items:flex-start;
+background:rgba(255,255,255,0.05);
+padding:18px;
+border-radius:12px;
+backdrop-filter:blur(10px);
+}
+
+.about-icon{
+background:#FF8A4C;
+color:white;
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+font-size:18px;
+flex-shrink:0;
+}
+
+.about-card h4{
+margin:0;
+font-size:16px;
+}
+
+.about-card p{
+margin-top:4px;
+opacity:.8;
+font-size:14px;
+}
+
+.about-btn{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+/* COMPACT ABOUT */
+
+.about-left span{
+color:#00E5FF;
+font-size:14px;
+letter-spacing:1px;
+}
+
+
+.about-section{
+padding:40px 8%;
+}
+
+.about-wrapper{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.about-left{
+max-width:520px;
+text-align:right;
+display:flex;
+flex-direction:column;
+align-items:flex-end;
+}
+
+.about-heading{
+text-align:center;
+margin-bottom:20px;
+}
+
+.about-heading span{
+color:#00E5FF;
+font-size:14px;
+letter-spacing:2px;
+}
+.about-left h2{
+font-family:"Space Grotesk";
+font-size:36px;
+margin:10px 0 15px 0;
+line-height:1.25;
+}
+
+.about-left p{
+opacity:.85;
+line-height:1.6;
+margin-bottom:25px;
+text-align: right;
+}
+
+.about-highlights{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.about-text{
+text-align:right;
+max-width:480px;
+}
+
+.highlight{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:14px;
+opacity:.9;
+}
+
+.highlight i{
+color:#00E5FF;
+font-size:16px;
+}
+
+.about-right img{
+width:260px;
+border-radius:14px;
+filter:drop-shadow(0 0 20px rgba(0,229,255,.3));
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.about-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.about-highlights{
+justify-content:center;
+}
+
+}
+
+.services-slider{
+overflow:hidden;
+position:relative;
+width:100%;
+margin-top:40px;
+}
+
+.services-track{
+display:flex;
+gap:30px;
+width:max-content;
+animation:scrollServices 35s linear infinite;
+}
+
+.services-track:hover{
+animation-play-state:paused;
+}
+
+.services-slider .card{
+width:280px;
+flex-shrink:0;
+}
+
+@keyframes scrollServices{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+.service-head{
+display:flex;
+align-items:flex-start;
+column-gap:12px;
+}
+
+.service-icon{
+font-size:26px;
+color:#00E5FF;
+flex-shrink:0;
+margin-top:6px;
+}
+
+.service-head h3{
+margin:0;
+line-height:1.25;
+}
+
+.services-title span{
+color:#9CFF2E;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.service-icon{
+font-size:26px;
+color:#00E5FF;
+margin-bottom:15px;
+}
+
+.service-img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* GLOBAL */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Inter,sans-serif;
+background:#0B1220;
+color:white;
+overflow-x:hidden;
+}
+
+/* ANIMATED NETWORK BACKGROUND */
+
+#network{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:#0B1220;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:relative;
+z-index:2;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:600;
+font-size:20px;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+opacity:.85;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00E5FF;
+}
+
+.cta-nav{
+background:linear-gradient(135deg,#2979FF,#00E5FF);
+padding:10px 22px;
+border-radius:8px;
+font-weight:500;
+cursor:pointer;
+transition:.3s;
+}
+
+.cta-nav:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(0,229,255,.4);
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:110px 8%;
+gap:40px;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero h1{
+font-family:"Space Grotesk";
+font-size:54px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero p{
+opacity:.8;
+margin-bottom:30px;
+font-size:18px;
+}
+
+/* BUTTONS */
+
+.buttons{
+display:flex;
+gap:20px;
+}
+
+.primary{
+background:linear-gradient(135deg,#2979FF,#00E5FF);
+border:none;
+padding:14px 28px;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+color:white;
+transition:.3s;
+}
+
+.primary:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(0,229,255,.4);
+}
+
+.secondary{
+background:transparent;
+border:1px solid #2979FF;
+padding:14px 28px;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+
+/* HERO IMAGE */
+
+.hero img{
+width:760px;
+filter:drop-shadow(0 0 40px rgba(0,229,255,0.5));
+}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+100%{transform:translateY(0)}
+}
+
+/* TRUST */
+
+.trust{
+text-align:center;
+padding:50px 8%;
+opacity:.8;
+}
+
+.trust-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+/* SERVICES PREVIEW */
+
+.services{
+padding:80px 8%;
+}
+
+.services-title{
+margin-bottom:40px;
+}
+
+.services-title span{
+color:#00E5FF;
+font-size:14px;
+letter-spacing:1px;
+}
+
+.services-title h2{
+font-family:"Space Grotesk";
+font-size:40px;
+margin-top:10px;
+margin-bottom: 40px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:16px;
+backdrop-filter:blur(10px);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.03);
+box-shadow:0 20px 40px rgba(0,229,255,.15);
+}
+
+.card h3{
+font-family:"Space Grotesk";
+margin-bottom:10px;
+}
+
+.card p{
+opacity:.8;
+font-size:14px;
+}
+
+.explore{
+text-align:center;
+margin-top:40px;
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 8%;
+max-width:900px;
+}
+
+/* CONTACT */
+
+.cta-section{
+text-align:center;
+padding:90px 8%;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+opacity:.7;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+color:white;
+text-decoration:none;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:200%;
+}
+
+nav ul{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#0B1220;
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+}
+
+nav ul.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="network"></canvas>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="index.html" class="logo-link">
+
+<div class="logo">
+<img src="logo.png" width="50">
+OPTI BOT
+</div>
+
+</a>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="#contact">Contact Us</a></li>
+</ul>
+
+<div class="cta-nav">Book a Call</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>AI Solutions That Actually Move Businesses Forward</h1>
+
+<p>
+OPTI BOT combines enterprise-grade AI systems with elite talent to help companies automate operations, unlock insights, and scale faster.
+</p>
+
+<div class="buttons">
+
+<button class="primary">Book Free Strategy Call</button>
+
+</div>
+
+</div>
+
+<img src="hero-ai.png">
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section" id="about">
+<div class="about-heading">
+  <span>ABOUT US</span>
+</div>
+<div class="about-container">
+
+<div class="about-left">
+
+
+
+<h2>Turning Complex Data Into Clear Decisions</h2>
+
+<p class="about-text">
+At <strong>OPTI BOT</strong>, we combine data intelligence, automation, and AI-powered analytics to help businesses uncover insights, streamline operations, and make smarter decisions faster.
+</p>
+
+</div>
+
+<div class="about-right">
+
+
+<div class="service-head" style="height: 30px;">
+<i class="fa-solid fa-chart-line service-icon"></i>
+<h3>Data-Driven Solutions</h3>
+</div>
+
+<p>We design intelligent tools and dashboards that transform raw data into powerful business strategies.</p>
+
+
+<div class="service-head" style="height: 30px;">
+<i class="fa-solid fa-handshake service-icon"></i>
+<h3>Our Commitment</h3>
+</div>
+
+<p>We deliver reliable, scalable solutions that help businesses grow with confidence.</p>
+</div>
+
+</div>
+
+
+</section>
+
+<button class="primary about-btn" onclick="window.location.href='about.html'">
+  Know More
+</button>
+
+<!-- SERVICES PREVIEW -->
+
+<section class="services" id="services">
+
+<div class="services-title">
+
+<!--<span>Data Intelligence & Automation Services</span>-->
+<h2>Our Solution to your Challenges</h2>
+
+</div>
+
+<div class="services-slider">
+
+<div class="services-track">
+
+<!-- Service 1 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-chart-line service-icon"></i>
+<h3>Data Consulting & Analytics</h3>
+</div>
+<p>
+Expert consulting to unlock the power of your data with tailored analytics solutions and actionable insights.
+</p>
+
+</div>
+
+
+<!-- Service 2 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-broom service-icon"></i>
+<h3>Data Cleaning & Preparation</h3>
+</div>
+<p>
+Accurate analysis begins with clean data. We remove inconsistencies and prepare structured datasets ready for analytics.
+</p>
+
+</div>
+
+
+<!-- Service 3 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-square-poll-vertical service-icon"></i>
+<h3>Statistical Analysis</h3>
+</div>
+<p>
+Advanced statistical techniques identify trends, validate hypotheses, and generate meaningful insights.
+</p>
+
+</div>
+
+
+<!-- Service 4 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-gauge service-icon"></i>
+<h3>BI Dashboards in Shiny</h3>
+</div>
+<p>
+Interactive dashboards delivering real-time KPI tracking and powerful decision-making tools.
+</p>
+
+</div>
+
+
+<!-- Service 5 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-gears service-icon"></i>
+<h3>Automated Reports & Workflows</h3>
+</div>
+<p>
+Automate reporting systems and workflows to deliver accurate data without repetitive manual effort.
+</p>
+
+</div>
+
+
+<!-- Service 6 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-chart-area service-icon"></i>
+<h3>Complex Shiny Dashboards</h3>
+</div>
+<p>
+Multi-functional dashboards with advanced filtering, drill-down capabilities, and predictive insights.
+</p>
+
+</div>
+
+
+<!-- Service 7 -->
+
+<div class="card">
+<div class="service-head">
+<i class="fa-solid fa-database service-icon"></i>
+<h3>Data Engineering</h3>
+</div>
+<p>
+Robust data pipelines, warehousing, and architecture for smooth data flow from collection to analysis.
+</p>
+
+</div>
+
+
+<!-- Service 8 -->
+
+
+<div class="card">
+<div class="service-head">
+  <i class="fa-solid fa-robot service-icon"></i>
+  <h3>Machine Learning & Predictive Modelling</h3>
+</div>
+
+<p>
+AI models that forecast outcomes, detect anomalies, and optimize business decisions.
+</p>
+
+</div>
+
+</div>
+</div>
+
+<div class="explore">
+
+<a href="services.html">
+
+<button class="primary">Explore All Services</button>
+
+</a>
+
+</div>
+
+</section></div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="cta-section" id="contact">
+
+<h2>Ready to Bring AI Into Your Business?</h2>
+
+<br>
+
+<button class="primary">Book a Free Consultation</button>
+
+</section>
+
+<footer>
+
+© 2025 OPTI BOT
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/919999999999?text=Hi%20OPTI%20BOT%20I%20would%20like%20a%20consultation"
+target="_blank">
+
+💬
+
+</a>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+const canvas = document.getElementById("network");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<80;i++){
+
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+vx:(Math.random()-0.5)*0.5,
+vy:(Math.random()-0.5)*0.5
+})
+
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+
+p.x+=p.vx;
+p.y+=p.vy;
+
+if(p.x<0||p.x>canvas.width)p.vx*=-1;
+if(p.y<0||p.y>canvas.height)p.vy*=-1;
+
+ctx.beginPath();
+ctx.arc(p.x,p.y,2,0,Math.PI*2);
+ctx.fillStyle="#00E5FF";
+ctx.fill();
+
+particles.forEach(p2=>{
+
+let dist=Math.hypot(p.x-p2.x,p.y-p2.y);
+
+if(dist<120){
+
+ctx.beginPath();
+ctx.moveTo(p.x,p.y);
+ctx.lineTo(p2.x,p2.y);
+ctx.strokeStyle="rgba(0,229,255,0.15)";
+ctx.stroke();
+
+}
+
+})
+
+})
+
+requestAnimationFrame(animate)
+
+}
+
+animate()
+
+</script>
+
+</body>
+</html>
