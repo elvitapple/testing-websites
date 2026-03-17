@@ -171,8 +171,151 @@ filter:drop-shadow(0 0 20px rgba(0,229,255,.3));
 }
 
 /* MOBILE */
+/* ================= MOBILE (≤600px) ================= */
 
-@media(max-width:100%){
+@media (max-width:600px){
+
+/* NAV */
+nav{
+padding:15px 5%;
+}
+
+nav ul{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#0B1220;
+padding:20px 0;
+}
+
+nav ul.active{
+display:flex;
+}
+
+.menu-toggle{
+display:block;
+}
+
+/* HERO */
+.hero{
+flex-direction:column;
+text-align:center;
+padding:60px 5%;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.hero img{
+width:100%;
+}
+
+/* ABOUT */
+.about-section{
+padding:50px 5%;
+}
+
+.about-container{
+flex-direction:column;
+gap:30px;
+}
+
+.about-left{
+text-align:center;
+align-items:center;
+}
+
+.about-text{
+text-align:center;
+}
+
+.about-right{
+align-items:center;
+}
+
+/* SERVICES */
+.services{
+padding:60px 5%;
+}
+
+.services-title h2{
+font-size:28px;
+}
+
+.services-track{
+gap:15px;
+}
+
+/* CTA */
+.cta-section{
+padding:60px 5%;
+}
+
+/* BUTTON */
+.primary{
+width:100%;
+max-width:280px;
+}
+
+}
+
+
+/* ================= TABLET (601px–1024px) ================= */
+
+@media (min-width:601px) and (max-width:1024px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:80%;
+}
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-left{
+align-items:center;
+text-align:center;
+}
+
+.about-right{
+align-items:center;
+}
+
+.services-track{
+gap:20px;
+}
+
+}
+
+
+/* ================= LARGE SCREENS (≥1200px) ================= */
+
+@media (min-width:1200px){
+
+.about-container{
+max-width:1200px;
+margin:auto;
+}
+
+.hero{
+max-width:1200px;
+margin:auto;
+}
+
+.services{
+max-width:1200px;
+margin:auto;
+}
 
 .about-wrapper{
 flex-direction:column;
@@ -183,7 +326,21 @@ text-align:center;
 justify-content:center;
 }
 
+
+
 }
+/*@media(max-width:100%){
+
+.about-wrapper{
+flex-direction:column;
+text-align:center;
+}
+
+.about-highlights{
+justify-content:center;
+}
+
+}*/
 
 .services-slider{
 overflow:hidden;
@@ -537,7 +694,7 @@ box-shadow:0 10px 30px rgba(0,0,0,.3);
 
 /* MOBILE */
 
-@media(max-width:100%){
+/* @media(max-width:100%){
 
 .hero{
 flex-direction:column;
@@ -568,7 +725,7 @@ display:flex;
 display:block;
 }
 
-}
+}*/
 
 </style>
 
