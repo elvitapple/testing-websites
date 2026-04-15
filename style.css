@@ -688,10 +688,16 @@ text-align:center;
     .mobile-contact-icons{
         display:flex !important;
         justify-content:center;
-        gap:20px;
+        gap:40px;
         margin-bottom:25px;
         padding-bottom:25px;
         border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .mobile-contact-icons a{
+        width:55px;
+        height:55px;
+        font-size:22px;
     }
 }
 
