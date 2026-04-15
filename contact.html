@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OPTIBOT | Contact Us</title>
+    <meta name="title" content="OPTIBOT | Contact Us">
+    <meta name="description"
+        content="Get in touch with OptiBot to book a free strategy call and discover how our AI can help you scale.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</head>
+
+<body>
+
+    <canvas id="network"></canvas>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a href="index.html"
+                style="display:flex; align-items:center; gap:12px; color:inherit; text-decoration:none;">
+                <img src="logo.png" alt="Optibot Logo" style="height:35px; width:auto; border-radius:50%;">
+                <div style="font-size:22px; font-weight:700; letter-spacing:0.5px;"><span
+                        style="color:#00E5FF;">OPTI</span>BOT</div>
+            </a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" style="color:#00E5FF;">Contact</a></li>
+        </ul>
+        <div class="nav-contact">
+            <a href="mailto:administration@opti-bot.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919136098203"><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </nav>
+
+    <section class="contact-page-layout"
+        style="padding:120px 8% 80px; display:flex; gap:60px; max-width:1300px; margin:auto; flex-wrap:wrap; align-items:center;">
+
+        <!-- LEFT SIDE: Info -->
+        <div class="contact-info" style="flex:1; min-width:320px;">
+            <h2 style="font-family:'Space Grotesk'; font-size:46px; margin-bottom:20px; line-height:1.2;">Let's Build
+                Something<br><span style="color:#00E5FF;">Powerful.</span></h2>
+            <p style="font-size:16px; line-height:1.7; opacity:0.8; margin-bottom:40px; max-width: 450px;">
+                Tell us about your business, your current data challenges, and your goals. We’ll show you exactly how
+                our custom AI systems can help you scale faster and operate smarter without the guesswork.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:25px;">
+                <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.02); padding:20px 25px; border-radius:15px; border:1px solid rgba(255,255,255,0.05); transition: 0.3s; cursor: default;"
+                    onmouseover="this.style.borderColor='rgba(0,229,255,0.3)'; this.style.transform='translateX(5px)';"
+                    onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateX(0)';">
+                    <div
+                        style="width:50px; height:50px; border-radius:50%; background:rgba(0,229,255,0.1); display:flex; align-items:center; justify-content:center; color:#00E5FF; font-size:20px; flex-shrink:0;">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom:5px; font-size:16px; color:rgba(255,255,255,0.9);">Our Headquarters
+                        </h4>
+                        <p style="font-size:14px; opacity:0.7;">Powai, Mumbai, Maharashtra - 400076</p>
+                    </div>
+                </div>
+
+                <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.02); padding:20px 25px; border-radius:15px; border:1px solid rgba(255,255,255,0.05); transition: 0.3s; cursor: default;"
+                    onmouseover="this.style.borderColor='rgba(0,229,255,0.3)'; this.style.transform='translateX(5px)';"
+                    onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateX(0)';">
+                    <div
+                        style="width:50px; height:50px; border-radius:50%; background:rgba(0,229,255,0.1); display:flex; align-items:center; justify-content:center; color:#00E5FF; font-size:20px; flex-shrink:0;">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom:5px; font-size:16px; color:rgba(255,255,255,0.9);">Email Us Directly
+                        </h4>
+                        <p style="font-size:14px; opacity:0.7;">administration@opti-bot.in</p>
+                    </div>
+                </div>
+
+                <div style="display:flex; align-items:center; gap:20px; background:rgba(255,255,255,0.02); padding:20px 25px; border-radius:15px; border:1px solid rgba(255,255,255,0.05); transition: 0.3s; cursor: default;"
+                    onmouseover="this.style.borderColor='rgba(0,229,255,0.3)'; this.style.transform='translateX(5px)';"
+                    onmouseout="this.style.borderColor='rgba(255,255,255,0.05)'; this.style.transform='translateX(0)';">
+                    <div
+                        style="width:50px; height:50px; border-radius:50%; background:rgba(0,229,255,0.1); display:flex; align-items:center; justify-content:center; color:#00E5FF; font-size:20px; flex-shrink:0;">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom:5px; font-size:16px; color:rgba(255,255,255,0.9);">Call For Support
+                        </h4>
+                        <p style="font-size:14px; opacity:0.7;">+91 9136098203</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE: Form -->
+        <div class="contact-form-container" style="flex:1.2; min-width:320px; width:100%; margin:0;">
+            <h3 style="font-family:'Space Grotesk'; font-size:24px; margin-bottom:25px; text-align: left;">Send a
+                Request</h3>
+            <form id="contact-form" method="POST"
+                action="https://script.google.com/macros/s/AKfycbwE3y-mr0FYaIKk7T-fChoJY76plqiJ1DwbjZw3haaBWQy0gACoCQrQXUhfNAFeq8mDLA/exec">
+
+                <div class="form-row"
+                    style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px;">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <input type="email" name="email" placeholder="Email Address" required style="margin-top:20px;">
+                <input type="text" name="subject" placeholder="What do you need help with?" required
+                    style="margin-top:20px;">
+                <textarea name="message" placeholder="Describe your requirement..." required
+                    style="margin-top:20px;"></textarea>
+
+                <button class="primary" style="margin-top:20px; width:100%; padding:18px 0; font-size:18px;">Send
+                    Message <i class="fa-solid fa-paper-plane" style="margin-left:8px;"></i></button>
+
+            </form>
+            <div id="form-message" style="margin-top:20px;"></div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer-section">
+
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>administration@opti-bot.in</h3>
+                <p>Powai, Mumbai, Maharashtra - 400076</p>
+                <p>+91 9136098203</p>
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-globe"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Subscribe To Our Newsletter</h4>
+                <p class="footer-subtext">Stay updated with Optibot’s latest AI innovations, insights, and offers.</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>→</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo" style="display:flex; align-items:center; gap:10px; font-size:20px; font-weight:700;">
+                <img src="logo.png" alt="Optibot Logo" style="height:28px; width:auto; border-radius:50%;">
+                <div><span style="color:#00E5FF;">OPTI</span>BOT</div>
+            </div>
+            <p>© 2025 Optibot. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <a class="whatsapp" href="https://wa.me/919136098203?text=Hi%20OPTI%20BOT%20I%20would%20like%20a%20consultation"
+        aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
