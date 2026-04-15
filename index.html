@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>OPTIBOT | Home</title>
+    <meta name="title" content="OPTIBOT | Home">
+    <meta name="description"
+        content="OPTIBOT combines enterprise-grade AI systems, data intelligence, and automation to help companies unlock insights, streamline operations, and scale faster.">
+    <meta name="keywords"
+        content="AI Automation, Data Analytics, BI Dashboards, Machine Learning, Data Engineering, Shiny Dashboards, Strategic Consulting, OPTIBOT">
+    <meta name="author" content="OPTIBOT">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opti-bot.in/">
+    <meta property="og:title" content="OPTIBOT | AI Automation & Data Solutions">
+    <meta property="og:description"
+        content="Enhance productivity with Optibot’s AI-driven chatbots, workflow automation tools, and strategic analytics.">
+    <meta property="og:image" content="https://opti-bot.in/hero-ai.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://opti-bot.in/">
+    <meta property="twitter:title" content="OPTIBOT | AI Automation & Data Solutions">
+    <meta property="twitter:description"
+        content="Enhance productivity with Optibot’s AI-driven chatbots and workflow automation tools.">
+    <meta property="twitter:image" content="https://opti-bot.in/hero-ai.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+
+</head>
+
+<body>
+
+    <canvas id="network"></canvas>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"
+                style="display:flex; align-items:center; gap:12px; color:inherit; text-decoration:none;">
+                <img src="logo.png" alt="Optibot Logo" style="height:35px; width:auto; border-radius:50%;">
+                <div style="font-size:22px; font-weight:700; letter-spacing:0.5px;"><span
+                        style="color:#00E5FF;">OPTI</span>BOT</div>
+            </a>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-contact">
+            <a href="mailto:administration@opti-bot.in"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+919136098203"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>AI Solutions That Actually Move Businesses Forward</h1>
+
+            <p>
+                OPTIBOT combines enterprise-grade AI systems with elite talent to help companies automate operations,
+                unlock insights, and scale faster.
+            </p>
+
+            <div class="buttons">
+                <button class="primary" onclick="location.href='contact.html'">Book Free Strategy Call</button>
+                <button class="secondary" onclick="location.href='services.html'">View Our Work</button>
+            </div>
+
+        </div>
+
+        <img src="hero-ai.png">
+
+    </section>
+
+    <!-- ABOUT (UNCHANGED) -->
+    <section class="about-section" id="about">
+
+        <div class="about-heading">
+            <span>ABOUT US</span>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-left">
+
+                <h2>Turning Complex Data Into Clear Decisions</h2>
+
+                <p class="about-text">
+                    At <strong>OPTIBOT</strong>, we combine data intelligence, automation, and AI-powered analytics to
+                    help businesses uncover insights, streamline operations, and make smarter decisions faster.
+                </p>
+
+            </div>
+
+            <div class="about-right">
+
+                <div class="service-head">
+                    <i class="fa-solid fa-chart-line service-icon"></i>
+                    <h3>Data-Driven Solutions</h3>
+                </div>
+
+                <p>We design intelligent tools and dashboards that transform raw data into powerful business strategies.
+                </p>
+
+                <div class="service-head">
+                    <i class="fa-solid fa-handshake service-icon"></i>
+                    <h3>Our Commitment</h3>
+                </div>
+
+                <p>We deliver reliable, scalable solutions that help businesses grow with confidence.</p>
+
+            </div>
+
+        </div>
+
+        <button class="primary about-btn" onclick="location.href='about.html'">
+            Know More
+        </button>
+
+    </section>
+
+    <!-- SERVICES (UNCHANGED SLIDER) -->
+    <section class="services" id="services">
+
+        <div class="services-title">
+            <h2>Solutions to Your Challenges</h2>
+        </div>
+
+        <div class="services-slider">
+            <div class="services-track">
+
+                <!-- KEEP ALL YOUR ORIGINAL CARDS EXACTLY -->
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-chart-line service-icon"></i>
+                        <h3>Data Consulting & Analytics</h3>
+                    </div>
+                    <p>Expert consulting to unlock the power of your data with tailored analytics solutions and
+                        actionable insights.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-broom service-icon"></i>
+                        <h3>Data Cleaning & Preparation</h3>
+                    </div>
+                    <p>Accurate analysis begins with clean data. We remove inconsistencies and prepare structured
+                        datasets ready for analytics.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-square-poll-vertical service-icon"></i>
+                        <h3>Statistical Analysis</h3>
+                    </div>
+                    <p>Advanced statistical techniques identify trends, validate hypotheses, and generate meaningful
+                        insights.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-gauge service-icon"></i>
+                        <h3>BI Dashboards in Shiny</h3>
+                    </div>
+                    <p>Interactive dashboards delivering real-time KPI tracking and powerful decision-making tools.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-gears service-icon"></i>
+                        <h3>Automated Reports & Workflows</h3>
+                    </div>
+                    <p>Automate reporting systems and workflows to deliver accurate data without repetitive manual
+                        effort.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-chart-area service-icon"></i>
+                        <h3>Complex Shiny Dashboards</h3>
+                    </div>
+                    <p>Multi-functional dashboards with advanced filtering, drill-down capabilities, and predictive
+                        insights.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-database service-icon"></i>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <p>Robust data pipelines, warehousing, and architecture for smooth data flow from collection to
+                        analysis.</p>
+                </div>
+
+                <div class="card">
+                    <div class="service-head">
+                        <i class="fa-solid fa-robot service-icon"></i>
+                        <h3>Machine Learning & Predictive Modelling</h3>
+                    </div>
+                    <p>AI models that forecast outcomes, detect anomalies, and optimize business decisions.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="explore">
+            <button class="primary" onclick="location.href='services.html'">Explore All Services</button>
+        </div>
+
+    </section>
+
+    <section class="process-section">
+
+        <div class="process-header">
+            <span>OUR PROCESS</span>
+            <h2>How We Build AI Systems</h2>
+        </div>
+
+        <div class="process-line"></div>
+
+        <div class="process-container">
+
+            <div class="process-step">
+                <div class="circle">01</div>
+                <h3>Assessment</h3>
+                <p>We analyze your business, workflows, and identify high-impact AI opportunities.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="circle">02</div>
+                <h3>Architecture</h3>
+                <p>We design scalable AI systems tailored to your data and infrastructure.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="circle">03</div>
+                <h3>Development</h3>
+                <p>We build and train models using clean, structured, and optimized data.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="circle">04</div>
+                <h3>Integration</h3>
+                <p>We integrate AI into your workflows ensuring seamless performance.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="circle">05</div>
+                <h3>Optimization</h3>
+                <p>We continuously monitor, improve, and scale your AI systems.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+
+        <div class="faq-header">
+            <span>NEED HELP?</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What makes OPTIBOT different from other AI solution providers?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We combine deep enterprise consulting with cutting-edge AI architecture. Rather than offering
+                        generic tools, we build customized data pipelines, BI dashboards, and ML models that directly
+                        target your business pain points and integrate seamlessly.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can your AI solutions integrate with our existing systems?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. Our integration process is designed to be frictionless, connecting our AI models with
+                        your current CRM, ERP, databases, and software workflows without disrupting daily operations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How long does it take to deploy an AI solution?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Deployments vary based on complexity. Standard BI dashboards can be deployed in a few weeks,
+                        while complex predictive modeling or enterprise machine learning systems typically take 2-4
+                        months from initial assessment to full production.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is our company’s data secure with OPTIBOT?
+                    <i class="fa-solid fa-plus faq-icon"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. Data security is built into our foundational architecture. We employ enterprise-grade
+                        encryption, strict access controls, and comply with standard data protection regulations to
+                        assure your proprietary information remains confidential.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+        <h2>Ready to Bring AI Into Your Business?</h2>
+
+        <button class="primary" onclick="location.href='contact.html'">
+            Book a Free Consultation
+        </button>
+
+    </section>
+
+    <section class="footer-section">
+
+        <div class="footer-container">
+
+            <!-- LEFT: CONTACT -->
+            <div class="footer-col">
+
+                <h3>administration@opti-bot.in</h3>
+
+                <p>Powai, Mumbai, Maharashtra - 400076</p>
+                <p>+91 9136098203</p>
+
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-globe"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+
+            </div>
+
+            <!-- MIDDLE: LINKS -->
+            <div class="footer-col">
+
+                <h4>Company</h4>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- RIGHT: NEWSLETTER -->
+            <div class="footer-col">
+
+                <h4>Subscribe To Our Newsletter</h4>
+
+                <p class="footer-subtext">
+                    Stay updated with Optibot’s latest AI innovations, insights, and offers.
+                </p>
+
+                <div class="newsletter">
+
+                    <input type="email" placeholder="Enter your email address">
+
+                    <button>→</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="footer-logo" style="display:flex; align-items:center; gap:10px; font-size:20px; font-weight:700;">
+                <img src="logo.png" alt="Optibot Logo" style="height:28px; width:auto; border-radius:50%;">
+                <div><span style="color:#00E5FF;">OPTI</span>BOT</div>
+            </div>
+
+            <p>© 2025 Optibot. All Rights Reserved.</p>
+
+        </div>
+
+    </section>
+
+    <a class="whatsapp" href="https://wa.me/919136098203?text=Hi%20OPTI%20BOT%20I%20would%20like%20a%20consultation"
+        aria-label="Contact us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
